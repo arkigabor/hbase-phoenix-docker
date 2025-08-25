@@ -1,0 +1,30 @@
+<configuration>
+    <property>
+        <name>hbase.rootdir</name>
+        <value>file:///data/hbase</value>
+    </property>
+    <property>
+        <name>hbase.zookeeper.property.dataDir</name>
+        <value>/data/zookeeper</value>
+    </property>
+    <property>
+        <name>hbase.zookeeper.quorum</name>
+        <value>localhost</value>
+    </property>
+    <property>
+        <name>hbase.zookeeper.property.clientPortAddress</name>
+        <value>0.0.0.0</value>
+    </property>
+    <property>
+        <name>hbase.master.hostname</name>
+        <value>0.0.0.0</value>
+    </property>
+    <property>
+        <name>hbase.wal.provider</name>
+        <value>filesystem</value>
+    </property>
+    <property>
+        <name>hbase.unsafe.stream.capability.enforce</name>
+        <value>false</value>
+    </property>
+</configuration>

@@ -1,0 +1,18 @@
+services:
+  hbase:
+    build: .
+    container_name: hbase
+    hostname: hbase
+    ports:
+      - 2181:2180    # Zookeeper
+      - 8080:8080    # HBase REST
+      - 9090:9090    # HBase Thrift
+      - 16000:16000  # HBase master RPC
+      - 16010:16010  # HBase master web UI
+      - 16020:16020  # HBase region server RPC
+      - 16030:16030  # HBase region server web UI
+    volumes:
+      - hbase-data:/data
+
+volumes:
+  hbase-data:
